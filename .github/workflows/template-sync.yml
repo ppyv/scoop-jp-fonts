@@ -8,10 +8,9 @@ on:
 
   # manual trigger
   workflow_dispatch:
-
+name: Sync from Repo Template
 jobs:
   repo-sync:
-    name: Sync from Repo Template
     runs-on: ubuntu-latest
     steps:
       # To use this repository's private action, you must check out the repository
@@ -20,7 +19,7 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v0.8.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.WORKFLOW_TOKEN }}
           source_repo_path: ScoopInstaller/BucketTemplate
           upstream_branch: master
           # pr_labels: <label1>,<label2>[,...] # optional, no default
