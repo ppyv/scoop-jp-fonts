@@ -8,10 +8,9 @@ on:
 
   # manual trigger
   workflow_dispatch:
-
+name: Sync from Repo Template
 jobs:
   repo-sync:
-    name: Sync from Repo Template
     runs-on: ubuntu-latest
     steps:
       # To use this repository's private action, you must check out the repository
