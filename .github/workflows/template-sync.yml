@@ -22,8 +22,6 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
-          github_api_url: https://api.github.com
-          is_allow_hooks: true
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v0.8.0
         with:
