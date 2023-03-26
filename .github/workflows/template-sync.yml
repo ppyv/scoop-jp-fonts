@@ -16,10 +16,18 @@ jobs:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Generate token to read from source repo # see: https://github.com/tibdex/github-app-token
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          github_api_url: https://api.github.com
+          is_allow_hooks: true
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v0.8.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ steps.generate_token.outputs.token }}
           source_repo_path: ScoopInstaller/BucketTemplate
           upstream_branch: master
           # pr_labels: <label1>,<label2>[,...] # optional, no default
