@@ -42,4 +42,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ steps.generate_token.outputs.token }}
-          branch: ${{ github.ref }}
+          branch: ${{ github.head_ref }}
