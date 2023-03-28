@@ -25,15 +25,12 @@ jobs:
         with:
           token: ${{ steps.generate_token.outputs.token }}
       - name: actions-template-sync
-        id: actions_template_sync
         uses: AndreasAugustin/actions-template-sync@v0.8.0
         with:
           github_token: ${{ steps.generate_token.outputs.token }}
           source_repo_path: ScoopInstaller/BucketTemplate
           upstream_branch: master
           # pr_labels: <label1>,<label2>[,...] # optional, no default
-      - name: "[debug] dump github"
-        run: echo '${{ toJSON(github) }}'
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v3
         with:
