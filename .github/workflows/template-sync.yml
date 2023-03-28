@@ -32,8 +32,8 @@ jobs:
           source_repo_path: ScoopInstaller/BucketTemplate
           upstream_branch: master
           # pr_labels: <label1>,<label2>[,...] # optional, no default
-      - name: "[debug] dump steps"
-        run: echo '${{ toJSON(steps) }}'
+      - name: "[debug] dump github"
+        run: echo '${{ toJSON(github) }}'
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@v3
         with:
