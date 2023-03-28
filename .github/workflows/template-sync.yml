@@ -30,16 +30,5 @@ jobs:
           github_token: ${{ steps.generate_token.outputs.token }}
           source_repo_path: ScoopInstaller/BucketTemplate
           upstream_branch: master
+          is_allow_hooks: true
           # pr_labels: <label1>,<label2>[,...] # optional, no default
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@v3
-        with:
-          find: "<username>/<bucketname>"
-          replace: "ppyv/scoop-jp-fonts"
-          include: bin/auto-pr.ps1
-          regex: false
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ steps.generate_token.outputs.token }}
-          branch: ${{ github.head_ref }}

@@ -1,0 +1,6 @@
+hooks:
+  prepush:
+    commands:
+      - sed -i 's/<username\/><bucketname>/ppyv\/scoop-jp-fonts/g' bin/auto-pr.ps1
+      - git add bin/auto-pr.ps1
+      - git commit -m "replace placeholder"
