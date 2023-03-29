@@ -4,7 +4,7 @@
     "homepage": "https://github.com/yuru7/HackGen",
     "license": "OFL-1.1",
     "url": "https://github.com/yuru7/HackGen/releases/download/v2.8.0/HackGen_v2.8.0.zip",
-    "hash": "",
+    "hash": "89ed3f0d8f6c3976a76594e659067a3fa57840a0cb44c601f8b36cc21f87b7c5",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/yuru7/HackGen/releases/download/v$version/HackGen_v$version.zip"
