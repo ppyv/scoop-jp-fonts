@@ -85,7 +85,10 @@
             "}"
         ]
     },
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/yuru7/BIZTER/tags",
+        "regex": "/tag/v([\\d.]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/yuru7/BIZTER/releases/download/v$version/BIZTER_v$version.zip"
     }
