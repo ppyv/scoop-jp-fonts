@@ -85,7 +85,9 @@
             "}"
         ]
     },
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/line/seed"
+    },
     "autoupdate": {
         "url": "https://github.com/line/seed/releases/download/v$version/LINESeed-fonts.zip"
     }
