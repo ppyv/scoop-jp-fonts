@@ -4,7 +4,7 @@
     "homepage": "https://github.com/yuru7/NOTONOTO",
     "license": "OFL-1.1",
     "url": "https://github.com/yuru7/NOTONOTO/releases/download/v0.0.3/NOTONOTO_v0.0.3.zip",
-    "hash": "",
+    "hash": "b3607d4008c0921cc869a076a0518d266cdd852ec3758f59790180bd64829450",
     "installer": {
         "script": [
             "$currentBuildNumber = [int] (Get-ItemProperty \"HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\").CurrentBuildNumber",
