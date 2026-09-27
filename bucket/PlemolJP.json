@@ -1,11 +1,11 @@
 {
-    "version": "3.0.0",
+    "version": "3.1.0",
     "description": "IBM Plex Mono と IBM Plex Sans JP を合成したプログラミングフォント PlemolJP (プレモル ジェイピー)",
     "homepage": "https://github.com/yuru7/PlemolJP",
     "license": "OFL-1.1",
-    "url": "https://github.com/yuru7/PlemolJP/releases/download/v3.0.0/PlemolJP_v3.0.0.zip",
-    "hash": "757de5ab50fe4f44bb3a3bffcbffec24f18af33dca9bd4e5d7949158fa84533e",
-    "extract_dir": "PlemolJP_v3.0.0",
+    "url": "https://github.com/yuru7/PlemolJP/releases/download/v3.1.0/PlemolJP_v3.1.0.zip",
+    "hash": "f1a65b539ed8979f211ceaa6c7ad1123b7e0cc2eb00ab0df02fb2dcb0d6e7157",
+    "extract_dir": "PlemolJP_v3.1.0",
     "installer": {
         "script": [
             "$currentBuildNumber = [int] (Get-ItemProperty \"HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\").CurrentBuildNumber",
