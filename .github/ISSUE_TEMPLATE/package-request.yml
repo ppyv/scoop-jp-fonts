@@ -14,9 +14,11 @@ body:
     label: Criteria
     description: For a package to be acceptable in this bucket, it should be
     options:
-    - label: Supports Japanese characters (hiragana, katakana, kanji)
+    - label: Criteria 1
       required: true
-    - label: Not supported in scoop-nerd-fonts
+    - label: Criteria 2
+      required: true
+    - label: Criteria 3
       required: true
 - type: input
   attributes:
